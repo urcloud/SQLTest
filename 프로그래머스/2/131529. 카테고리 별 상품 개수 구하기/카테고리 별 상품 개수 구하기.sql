@@ -1,0 +1,8 @@
+SELECT
+    left(PRODUCT_CODE, 2),
+    COUNT(*)
+FROM PRODUCT
+GROUP BY
+    left(PRODUCT_CODE, 2)
+ORDER BY
+    left(PRODUCT_CODE, 2)
